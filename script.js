@@ -241,3 +241,29 @@ if(typingText){
     type();
 
 }
+
+//=============================
+// DARK / LIGHT MODE
+//=============================
+
+const themeButton = document.querySelector(".theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+
+    }
+    else{
+
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+
+    }
+
+});

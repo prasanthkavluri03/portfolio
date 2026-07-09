@@ -783,3 +783,84 @@ footer{
 
 }
 
+
+/*=========================
+ DARK/LIGHT BUTTON
+==========================*/
+
+.theme-toggle{
+
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.4s;
+
+}
+
+.theme-toggle:hover{
+
+    background:#38bdf8;
+    transform:rotate(180deg);
+
+}
+
+.theme-toggle i{
+
+    font-size:22px;
+    color:white;
+
+}
+
+/*=========================
+ LIGHT MODE
+==========================*/
+
+body.light{
+
+    background:#f8fafc;
+    color:#111827;
+
+}
+
+body.light header{
+
+    background:white;
+
+}
+
+body.light .skill-card,
+body.light .project-card,
+body.light .education-card,
+body.light .certificate-card,
+body.light .contact-info,
+body.light form{
+
+    background:white;
+    color:#111827;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+body.light p{
+
+    color:#374151;
+
+}
+
+body.light .nav-links a{
+
+    color:#111827;
+
+}
+
+body.light footer{
+
+    background:#e5e7eb;
+
+}
+
