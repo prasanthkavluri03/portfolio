@@ -242,6 +242,7 @@ if(typingText){
 
 }
 
+
 //=============================
 // DARK / LIGHT MODE
 //=============================
@@ -249,20 +250,25 @@ if(typingText){
 const themeButton = document.querySelector(".theme-toggle");
 const themeIcon = document.getElementById("theme-icon");
 
+// Load saved theme
+if(localStorage.getItem("theme") === "light"){
+    document.body.classList.add("light");
+    themeIcon.classList.replace("fa-moon","fa-sun");
+}
+
 themeButton.addEventListener("click", () => {
 
     document.body.classList.toggle("light");
 
     if(document.body.classList.contains("light")){
 
-        themeIcon.classList.remove("fa-moon");
-        themeIcon.classList.add("fa-sun");
+        themeIcon.classList.replace("fa-moon","fa-sun");
+        localStorage.setItem("theme","light");
 
-    }
-    else{
+    }else{
 
-        themeIcon.classList.remove("fa-sun");
-        themeIcon.classList.add("fa-moon");
+        themeIcon.classList.replace("fa-sun","fa-moon");
+        localStorage.setItem("theme","dark");
 
     }
 
