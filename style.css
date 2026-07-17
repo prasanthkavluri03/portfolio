@@ -859,9 +859,86 @@ body.light .nav-links a{
 
 }
 
+body.light .btn2{
+
+    color:#111827;
+    border-color:#38bdf8;
+
+}
+
+body.light .btn2:hover{
+
+    color:#ffffff;
+
+}
+
 body.light footer{
 
     background:#e5e7eb;
+
+}
+
+body.light .home-text h2,
+body.light .home-text p,
+body.light .about-container p,
+body.light .project-card p,
+body.light .project-card h3,
+body.light .skill-card h3,
+body.light .education-card h3,
+body.light .education-card h4,
+body.light .education-card p,
+body.light .certificate-card h3,
+body.light .certificate-card p,
+body.light .contact-info h2,
+body.light .contact-info p,
+body.light .info span,
+body.light .footer-container h2,
+body.light .footer-container p,
+body.light .image-back {
+
+    color:#111827;
+
+}
+
+body.light .about-container,
+body.light .image-back,
+body.light .footer-social a {
+
+    background:#ffffff;
+
+}
+
+body.light .footer-social a{
+
+    color:#111827;
+
+}
+
+body.light form input,
+body.light form textarea{
+
+    background:#f1f5f9;
+    color:#111827;
+    border:1px solid #cbd5e1;
+
+}
+
+body.light form input:focus,
+body.light form textarea:focus{
+
+    outline:2px solid #2563eb;
+
+}
+
+body.light .theme-toggle{
+
+    background:#e5e7eb;
+
+}
+
+body.light .theme-toggle i{
+
+    color:#111827;
 
 }
 

@@ -63,14 +63,24 @@ window.addEventListener("scroll", () => {
 
     if(window.scrollY > 50){
 
-        header.style.background = "#0f172a";
-        header.style.boxShadow = "0 5px 20px rgba(0,0,0,.4)";
+        if(document.body.classList.contains("light")){
+            header.style.background = "#ffffff";
+            header.style.boxShadow = "0 5px 20px rgba(0,0,0,.15)";
+        } else {
+            header.style.background = "#0f172a";
+            header.style.boxShadow = "0 5px 20px rgba(0,0,0,.4)";
+        }
 
     }
     else{
 
-        header.style.background = "#111827";
-        header.style.boxShadow = "none";
+        if(document.body.classList.contains("light")){
+            header.style.background = "white";
+            header.style.boxShadow = "none";
+        } else {
+            header.style.background = "#111827";
+            header.style.boxShadow = "none";
+        }
 
     }
 
